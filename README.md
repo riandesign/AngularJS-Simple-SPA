@@ -4,4 +4,4 @@
 
 ## Purpose
 
-It is just a simple example of using AngularJS to develop a SPA (Single Page Application).
+It is just a simple example of how to use AngularJS to develop a SPA (Single Page Application).
