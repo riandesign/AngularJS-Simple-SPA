@@ -1,0 +1,139 @@
+$font-family: 'Open Sans', sans-serif;
+$default-color: #255ede;
+$default-padding: 20px;
+$text-shadow: 0 2px 1px rgba(0,0,0,0.5);
+$box-shadow: 0 4px 5px rgba(0,0,0,0.25);
+$transition: all 0.3s ease;
+
+body {
+  background: #fff;
+  font-family: $font-family;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+a {
+   color: $default-color;
+   text-decoration: underline;
+   transition: $transition;
+
+   &:hover {
+     text-decoration: none;
+   }
+}
+
+.clear { clear: both }
+
+header {
+  text-align: center;
+  background: $default-color;
+  color: #fff;
+  padding: $default-padding;
+  font-size: 13px;
+
+  h1 {
+    font-size: 26px;
+    font-weight: 700;
+    text-shadow: $text-shadow;
+    margin-bottom: 10px;
+  }
+}
+
+nav {
+  box-shadow: $box-shadow;
+
+  a {
+    color: #444;
+    font-weight: 600;
+    display: inline-block;
+    padding: $default-padding;
+    border-radius: 3px;
+    text-decoration: none !important;
+
+    &:hover {
+      background: rgba(0,0,0,0.1);
+    }
+
+    &:active {
+      background: rgba(0,0,0,0.2);
+    }
+  }
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  background: #ccc;
+  padding: $default-padding;
+  font-size: 13px;
+  line-height: 18px;
+
+  a {
+    color: #333;
+  }
+}
+
+ul.jobsList {
+  padding: 40px;
+
+  @media screen and (max-width: 767px) {
+    padding: 20px;
+  }
+
+  li {
+    width: (100% / 3);
+    float: left;
+
+    @media screen and (max-width: 767px) {
+      width: (100% / 2);
+    }
+
+    img {
+      transition: $transition;
+      vertical-align: middle;
+      width: 100%;
+      box-shadow: $box-shadow;
+
+      &:hover {
+        transform: scale(0.9,0.9);
+        opacity: 0.9;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+
+
+article {
+  padding: 40px;
+
+  @media screen and (max-width: 767px) {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: $default-color;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  figure {
+    text-align: center;
+
+    img {
+      width: 50%;
+      border-radius: 20px;
+      box-shadow: $box-shadow;
+
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
+  }
+}

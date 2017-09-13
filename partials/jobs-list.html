@@ -1,8 +1,13 @@
 <!--<div ng-controller="JobsController">-->
-<div>
+<section>
   <ul class="jobsList">
     <li ng-repeat="job in jobs">
-      {{job.title}}
+      <a href="#/job-details" ng-click="selectJob(job)">
+        <img src="http://riandesign.com.br/files/galeria/{{job.directory}}/{{job.image}}">
+        <!--{{ job.title }}-->
+      </a>
     </li>
   </ul>
-</div>
+
+  <div class="clear"></div>
+</section>

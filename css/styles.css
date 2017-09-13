@@ -1,0 +1,97 @@
+body {
+  background: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300; }
+
+a {
+  color: #255ede;
+  text-decoration: underline;
+  transition: all 0.3s ease; }
+  a:hover {
+    text-decoration: none; }
+
+.clear {
+  clear: both; }
+
+header {
+  text-align: center;
+  background: #255ede;
+  color: #fff;
+  padding: 20px;
+  font-size: 13px; }
+  header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px; }
+
+nav {
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25); }
+  nav a {
+    color: #444;
+    font-weight: 600;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 3px;
+    text-decoration: none !important; }
+    nav a:hover {
+      background: rgba(0, 0, 0, 0.1); }
+    nav a:active {
+      background: rgba(0, 0, 0, 0.2); }
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  background: #ccc;
+  padding: 20px;
+  font-size: 13px;
+  line-height: 18px; }
+  footer a {
+    color: #333; }
+
+ul.jobsList {
+  padding: 40px; }
+  @media screen and (max-width: 767px) {
+    ul.jobsList {
+      padding: 20px; } }
+  ul.jobsList li {
+    width: 33.3333333333%;
+    float: left; }
+    @media screen and (max-width: 767px) {
+      ul.jobsList li {
+        width: 50%; } }
+    ul.jobsList li img {
+      transition: all 0.3s ease;
+      vertical-align: middle;
+      width: 100%;
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25); }
+      ul.jobsList li img:hover {
+        transform: scale(0.9, 0.9);
+        opacity: 0.9;
+        border-radius: 20px; }
+
+article {
+  padding: 40px; }
+  @media screen and (max-width: 767px) {
+    article {
+      padding: 20px; } }
+  article h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #255ede;
+    margin-bottom: 40px; }
+    @media screen and (max-width: 767px) {
+      article h2 {
+        margin-bottom: 20px; } }
+  article figure {
+    text-align: center; }
+    article figure img {
+      width: 50%;
+      border-radius: 20px;
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25); }
+      @media screen and (max-width: 767px) {
+        article figure img {
+          width: 100%; } }
+
+/*# sourceMappingURL=styles.css.map */
